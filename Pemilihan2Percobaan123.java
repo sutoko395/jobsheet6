@@ -11,9 +11,13 @@ public class Pemilihan2Percobaan123 {
         System.out.print("Masukkan tahun: ");
         tahun = sc.nextInt();
         
-        if (tahun % 4 == 0) {
-            if (tahun % 100 == 0) {
-                if (tahun % 400 == 0) {
+        int cek400 = tahun % 400;
+        int cek100 = tahun % 100;
+        int cek4 = tahun % 4;
+
+        if (cek4 == 0) {
+            if (cek100 == 0) {
+                if (cek400 == 0) {
                     System.out.println("Tahun Kabisat");
                 } else {
                     System.out.println("Bukan Tahun Kabisat");
